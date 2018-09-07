@@ -35,8 +35,6 @@ input_filename_pattern = re.compile('input_[0-9]+.pb')
 output_filename_pattern = re.compile('output_[0-9]+.pb')
 
 skip_model_names = [
-    # Convolution Nan issue on Linux. 
-    'shufflenet',
     # Tests from onnx backend tests that currently fails. 
     'test_constant',
     'test_edge_pad',
@@ -84,8 +82,6 @@ skip_model_names = [
 ]
 
 skip_round_trip_model_names = [
-    # Convolution Nan issue on Linux. 
-    'shufflenet',
     # Tests from onnx backend tests that currently fails. 
     'test_constant',
     'test_edge_pad',
